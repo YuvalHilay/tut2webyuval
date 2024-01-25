@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTW App Template</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the new CSS file -->
+</head>
+
+<body class="dark:text-white light:text-black">
+    <!-- Calculator -->
+    <div id="calculator">
+        <div class="display" id="display">0</div>
+        <div class="calculator-row">
+            <div class="calculator-button" onclick="clearDisplay()">C</div>
+            <div class="calculator-button" onclick="deleteLast()">DEL</div>
+            <div class="calculator-button" onclick="appendValue('/')">/</div>
+            <div class="calculator-button" onclick="calculatePi()">π</div>
+            <div class="calculator-button" onclick="calculateLn()">ln</div>
+            <div class="calculator-button" onclick="calculateLog()">log</div>
+            <div class="calculator-button" onclick="appendValue('**')">x^y</div>
+        </div>
+        <div class="calculator-row">
+            <div class="calculator-button" onclick="appendValue('7')">7</div>
+            <div class="calculator-button" onclick="appendValue('8')">8</div>
+            <div class="calculator-button" onclick="appendValue('9')">9</div>
+            <div class="calculator-button" onclick="appendValue('*')">*</div>
+            <div class="calculator-button" onclick="calculateAbsolute()">|x|</div>
+            <div class="calculator-button" onclick="appendValue('%')">mod</div>
+            <div class="calculator-button" onclick="calculateExp()">exp</div>
+            <div class="calculator-button" onclick="calculateFactorial()">!</div>
+        </div>
+        <div class="calculator-row">
+            <div class="calculator-button" onclick="appendValue('4')">4</div>
+            <div class="calculator-button" onclick="appendValue('5')">5</div>
+            <div class="calculator-button" onclick="appendValue('6')">6</div>
+            <div class="calculator-button" onclick="appendValue('-')">-</div>
+            <div class="calculator-button" onclick="appendValue('(')">(</div>
+            <div class="calculator-button" onclick="appendValue(')')">)</div>
+            <div class="calculator-button" onclick="memoryClear()">MC</div>
+            <div class="calculator-button" onclick="memoryRecall()">MR</div>
+        </div>
+        <div class="calculator-row">
+            <div class="calculator-button" onclick="appendValue('1')">1</div>
+            <div class="calculator-button" onclick="appendValue('2')">2</div>
+            <div class="calculator-button" onclick="appendValue('3')">3</div>
+            <div class="calculator-button" onclick="appendValue('+')">+</div>
+            <div class="calculator-button" onclick="memoryAdd()">M+</div>
+            <div class="calculator-button" onclick="memorySubtract()">M-</div>
+            <div class="calculator-button" onclick="memoryStore()">MS</div>
+            <div class="calculator-button" onclick="calculateReciprocal()">1/X</div>
+        </div>
+        <div class="calculator-row">
+            <div class="calculator-button" onclick="appendValue('0')">0</div>
+            <div class="calculator-button" onclick="appendValue('.')">.</div>
+            <div class="calculator-button" onclick="calculateResult()">=</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the new JS file -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://morethanwallet.com/appstore/index.js"></script>
+</body>
+
+</html>

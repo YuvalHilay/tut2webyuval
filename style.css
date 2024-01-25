@@ -1,0 +1,45 @@
+/* style.css */
+
+/* Examples for dark/light themes */
+.dark .dark\:text-white {
+    color: #fff;
+}
+.dark .dark\:bg-gray-800 {
+    background-color: #1f2937;
+}
+.light .light\:text-black {
+    color: #000;
+}
+
+/* Calculator styles */
+#calculator {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.calculator-row {
+    display: flex;
+}
+
+.calculator-button {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculator-button:hover {
+    background-color: #ddd;
+}
+
+.display {
+    flex: 1;
+    padding: 10px;
+    text-align: right;
+    font-size: 18px;
+    background-color: #fff;
+}
